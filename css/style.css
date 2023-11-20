@@ -1,0 +1,455 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+:root{
+    --primary-color: #ffd6b0;
+    --secondary-color: #fcc9a8;
+    --tertiary-color: #95125f;
+    --accent-color: #583D72;
+}
+
+#jump{
+    position: absolute;
+    left: -500px;  /* screen reader still reads */
+    top: 100px; /* You can adjust this to wherever you'd like the link to appear when focused */
+    z-index: 2;
+    padding: 5px 10px; 
+    color: black;
+    border: #fff 2px solid;
+    border-radius: 10px;
+}
+
+#jump:focus { 
+    left: 10px;  
+}
+
+
+.topnav ul li svg {
+   display: none;
+  
+  }
+  
+
+body{
+    background-color: var(--primary-color);
+}
+
+
+
+
+.topnav a.current {
+    border: 2px solid white; 
+    border-radius: 10px;
+    padding-bottom: 12px; 
+    color: var(--tertiary-color);
+}
+
+
+.topnav a {
+    
+    display: flex;
+    color: var(--accent-color);
+   
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.topnav a:hover {
+    color: var(--tertiary-color);
+    border-bottom: 2px solid #fff; /* underline effect */
+}
+
+img:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.time-display {
+    font-size: 24px; /* Larger font size for better visibility */
+    color: #ffffff; /* White text color */
+    background-color: #333; /* Dark background for the clock */
+    padding: 20px; /* More padding for a rounder shape */
+    text-align: center; /* Center align the text */
+    border-radius: 50%; /* Circular shape */
+    border: 2px solid #fff; /* White border */
+    width: 100px; /* Fixed width */
+    height: 100px; /* Fixed height */
+    line-height: 100px; /* Vertically center the text */
+    margin: 0 auto; /* Center the clock horizontally if it's a block element */
+    display: flex; /* Using flex for centering */
+    justify-content: center; /* Center horizontally in flex */
+    align-items: center; /* Center vertically in flex */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adding some shadow for depth */
+    font-family: 'Arial', sans-serif; /* Digital clock-like font */
+}
+
+
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+h1{
+    margin-top: -20px;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    width: 100%;
+}
+
+h2{
+    margin: 50px;
+}
+
+.banner{
+    background-color: var(--accent-color);
+    color: white;
+    padding: 50px 0px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -20px;
+    border-radius: 0px 0px 50px 50px;
+    box-shadow: 0 5px 5px rgba(220, 33, 182, 0.5);
+}
+
+body {
+    background-color: var(--primary-color);
+    color: #333;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.recipe-steps{
+    margin: 50px;
+    
+    list-style-type: square;
+    list-style-position: inside;
+    border: #ffc4c4 2px solid;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: var(--tertiary-color);
+}
+
+
+.topnav {
+    background-color: var(--secondary-color);
+    
+   
+}
+
+.topnav ul {
+    list-style: none;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.topnav li {
+    margin: 0 10px;
+}
+
+
+main {
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    
+}
+
+
+
+.pets {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #444;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+h2:before, 
+        h2:after { 
+            content: ""; 
+            flex: 1 1; 
+            border-bottom: 2px solid #000; 
+            margin: auto; 
+        } 
+
+
+
+img, video{
+    
+    gap: 15px;
+    border-radius: 70%;
+    margin-top: 20px;
+    border: solid 10px var(--accent-color);
+}
+
+.gallery_flex{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.gallery {
+    
+    
+    display: grid;
+    grid-template-columns: 200px;  
+    gap: 20px;
+}
+
+.recipe-steps{
+    margin: 50px;
+    
+    list-style-type: square;
+    list-style-position: inside;
+    border: #ffc4c4 2px solid;
+}
+
+h1{
+    margin-top: -20px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+    width: 100%;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+
+
+.Static, .gif{
+    align-items: center;
+    margin: 0 auto;
+}
+
+.Static{
+    display: none;
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.main_img {
+    animation: floatAnimation 3s infinite; /* 3 seconds duration, infinite loop */
+    will-change: transform;  /* Optimize for animation */
+}
+
+
+@media screen and (prefers-reduced-motion: reduce) {
+     img {
+        transition: none;
+    }
+
+    .Static{
+        display: block;
+    }
+
+    .gif{
+        display: none;
+    }
+
+    .main_img{
+        animation: none;
+    }
+}
+    
+
+
+h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: var(--accent-color);
+}
+
+p {
+    margin: 20px;
+    padding: 20px;
+}
+
+p a , figcaption a{
+    color: var(--accent-color); 
+    text-decoration: none;       
+    transition: color 0.2s;      
+    border-bottom: 2px solid;
+    font-weight: bold;   
+}
+
+
+p a, figcaption a:hover {
+    color: var(--tertiary-color);              
+    border-bottom: 1px solid;  
+}
+
+
+p a, figcaption a:visited {
+    color: #007BFF;              
+}
+
+
+p a, figcaption a:active {
+    color: #0d3566;              
+}
+
+
+ul {
+    
+    margin-left: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.likes{
+    justify-content: center;
+    border: 2px solid rgba(79, 93, 255, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px;
+    line-height: 50px;
+    margin: 30px;
+
+}
+span{
+    margin: 10px;
+    font-size: 0.9rem;
+
+}
+.details_recipe{
+    background-color: var(--secondary-color);
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+
+        /* back to top button */
+        .scroll-arrow {
+            position: fixed;
+            right: 26px;
+            bottom: 26px;
+            width: 40px;
+            height: 36px;
+            background: #e0cfff;
+            border-radius: 100%;
+            box-shadow: 0 5px 5px rgba(220, 33, 182, 0.5);
+
+            z-index: 9;
+          }
+  
+          
+          #scroll-text{
+            color: var(--accent-color);
+            position: fixed;
+            right: 32px;
+            bottom: 33px;
+            font-size: 16px;
+            z-index: 10;
+            font-family: Quicksand, sans-serif;
+            font-weight: bold;
+          }
+          #scroll-text:hover {
+            color: var(--primary-color);
+          }
+  
+          
+          html {
+            scroll-behavior: smooth;
+          }
+        
+
+@media (min-width: 601px) {
+
+    .topnav ul li a  svg {
+        display: flex;
+        
+        margin-right: 5px;
+        height: 24px;
+
+        width: 24px; 
+        fill: currentColor; 
+        padding: 1px;
+        box-sizing: border-box;
+      }
+    
+    .gallery_flex{
+        display: flex;  
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    
+    .gallery {
+        display: grid;
+        grid-template-columns: 200px 200px;  
+        gap: 20px;
+    }
+
+    body {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 200px);
+    }
+
+    p {
+        font-size: 1.125em; 
+        line-height: 1.8;
+        padding: 15px; 
+        margin: 20px 0; 
+        max-width: 80%; 
+        margin-left: auto; 
+        margin-right: auto;
+        border: var(--accent-color) 2px solid;
+        border-radius: 15px;
+    }
+    
+    .likes{
+        padding: 30px; 
+        gap: 15px; 
+        margin: 40px auto; 
+        max-width: 80%; 
+        font-size: 1.1em;
+    }
+
+    
+}
